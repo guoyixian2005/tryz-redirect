@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/index.php",
+      "destination": "https://gztryz.cn/",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.php/(.*)",
+      "destination": "https://gztryz.cn/",
+      "statusCode": 301
+    },
+    {
+      "source": "/(.*)",
+      "destination": "https://gztryz.cn/$1",
+      "statusCode": 301
+    }
+  ]
+}
